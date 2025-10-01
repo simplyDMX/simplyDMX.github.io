@@ -1,3 +1,3 @@
 # simplyDMX
 
-Toolset to simplify working with DMX fixtures and adresses.
+Website with different tools to simplify working with DMX fixtures and adresses.
