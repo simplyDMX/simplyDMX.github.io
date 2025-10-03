@@ -9,3 +9,91 @@ h1{
     font-size: 50px;
     color: rgb(197, 224, 99);
 }
+
+button{
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(72, 139, 73);
+    background-color: rgb(197, 224, 99);
+    border: none;
+    border-radius: 5px;
+}
+
+
+.addressCalcInputDiv{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#headerForAddressTable{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-collapse: collapse;
+
+}
+
+
+#addressTable {
+    
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 3px solid rgb(197, 224, 99);
+    border-radius: 10px;
+    
+}
+
+
+
+tr:nth-child(even) {
+  background-color: rgb(72, 139, 73);
+}
+
+
+footer {
+    margin-top: 20px;
+    font-size: small;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(197, 224, 99);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(197, 224, 99);
+  background-color: transparent;
+  text-decoration: none;
+}
