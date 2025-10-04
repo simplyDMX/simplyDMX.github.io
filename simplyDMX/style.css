@@ -97,3 +97,7 @@ a:active {
   background-color: transparent;
   text-decoration: none;
 }
+
+#version {
+  font-style: normal;
+}
