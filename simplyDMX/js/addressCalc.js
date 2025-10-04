@@ -8,11 +8,20 @@ function createTable() {
     if(fixtureamount == ""){
         fixtureamount = 12;
     }
+    else if(fixtureamount > 200){
+        fixtureamount = 200
+    }
     if(fixturefootprint == ""){
         fixturefootprint = 1;
     }
+    else if(fixturefootprint > 512){
+        fixturefootprint = 512
+    }
     if(startAddress == "") {
         startAddress = 1;
+    }
+    else if(startAddress > 512){
+        startAddress = 1
     }
 
     fixtureamount = parseInt(fixtureamount)
@@ -29,6 +38,7 @@ function createTable() {
     let nextFixtureAddress = startAddress;
     let currentFixtureNumber = 0;
     let cellContent;
+    let cell2Content;
     
     let div = document.getElementById("addressCalcTable");
     let tbl = document.getElementById("addressTable");
@@ -55,18 +65,21 @@ function createTable() {
 
         currentFixtureNumber++;
         cellContent = currentFixtureNumber;
-        
+        cell2Content = currentFixtureAddress + " - " + parseInt(parseInt(currentFixtureAddress) + parseInt(fixturefootprint) - 1);
+        //cell2Content = currentFixtureAddress
+
         let tr = tbl.insertRow();
         
-        for (let j = 0;j < colums; j++) {           //Generate new colum(cell)
-            let td = tr.insertCell();
+        let td = tr.insertCell();
             td.appendChild(document.createTextNode(cellContent));           //Write Cell Content
             td.style.width = "50%";
+
             
-            cellContent = currentFixtureAddress + " - " + parseInt(parseInt(currentFixtureAddress) + parseInt(fixturefootprint) - 1);
-            //cellContent = currentFixtureAddress
-        }        
+        let td2 = tr.insertCell();
+            td2.appendChild(document.createTextNode(cell2Content));           //Write Cell Content
+            td2.style.width = "50%";
     }
+    
     div.appendChild(tbl);
 }
 
