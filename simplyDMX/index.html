@@ -18,35 +18,44 @@
         <h1>simplyDMX</h2>
     </header>
     
-    <div>
-        <h3>AddressCalc</h3>
-    
-        <label for="fixtureamount">Amount</label>
-        <input class="addressCalcInputDiv" type="number" id="fixtureamount" name="fixtureamount" max="200" placeholder="12">
-        <br>
-        <label for="fixturefootprint">Footprint</label>
-        <input class="addressCalcInputDiv" type="number" id="fixturefootprint" name="fixturefootprint" max="512" placeholder="1">
-        <br>
-        <label for="startAddress">starting address</label>
-        <input class="addressCalcInputDiv" type="number"  id="startAddress" name="startAddress" max="512" placeholder="1">
-        <br>
-        <button type="button" onclick="createTable()">Calculate</button>
-    </div>
-    <div>
-        <table id="headerForAddressTable">
-            <tr>
-                <td style="width: 50%;">Fixture no.</td>
-                <td style="width: 50%;">Address</td>
-            </tr>
-        </table>
-    </div>
-    <div id="addressCalcTable"></div>
-        <table id="addressTable" >
-            <!-- Address table get generated here-->
-        </table>
+    <div class="flex-container">
+        <div>
+            <div>
+                <h3>AddressCalc</h3>
+
+                <label for="fixtureamount">Amount</label>
+                <input class="addressCalcInputDiv" type="number" id="fixtureamount" name="fixtureamount" max="200" placeholder="12">
+                <br>
+                <label for="fixturefootprint">Footprint</label>
+                <input class="addressCalcInputDiv" type="number" id="fixturefootprint" name="fixturefootprint" max="512" placeholder="1">
+                <br>
+                <label for="startAddress">Starting address</label>
+                <input class="addressCalcInputDiv" type="number"  id="startAddress" name="startAddress" max="512" placeholder="1">
+                <br>
+                <button type="button" onclick="createTable()">Calculate</button>
+            </div>
+            <div>
+                <table id="headerForAddressTable">
+                    <tr>
+                        <td style="width: 50%;">Fixture no.</td>
+                        <td style="width: 50%;">Address</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="addressCalcTable">
+                <table id="addressTable" >
+                    <!-- Address table get generated here-->
+                </table>
+
+            </div>
+        </div>
+
+        <div>
+            <h3>FootprintCalc</h3>
+        </div>
+
 
     </div>
-    
 
     <footer>
         Developed by Jonathan | <a href="https://github.com/Chaoskaefer/simplyDMX" target="_blank">Github</a> | <var id="version">Version</var>
