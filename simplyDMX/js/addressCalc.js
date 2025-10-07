@@ -30,13 +30,13 @@ function createTable() {
 
 
     //Define variables
-    let colums = 2;
     let rows = fixtureamount;
 
     let currentFixtureAddress = startAddress;
-    let currentFixtureEndAddress = startAddress - 1;
-    let nextFixtureAddress = startAddress;
-    let currentFixtureNumber = 0;
+    let currentFixtureEndAddress;
+    let currentFixtureNumber = 1;
+    let currentUniverse = 1;
+
     let cellContent;
     let cell2Content;
     
@@ -53,31 +53,28 @@ function createTable() {
     
     //Generate new table
     for (let i = 0;i < rows; i++) {             //Generate new row
-        //Calculate the current fixture address
-        currentFixtureAddress = nextFixtureAddress;
-        nextFixtureAddress = currentFixtureAddress + fixturefootprint;
-        currentFixtureEndAddress = currentFixtureAddress + fixturefootprint - 1;
         
-        if (currentFixtureEndAddress > 512) {
-                currentFixtureAddress  = 1
-                nextFixtureAddress = currentFixtureAddress + fixturefootprint;
-        }
-
-        currentFixtureNumber++;
         cellContent = currentFixtureNumber;
         cell2Content = currentFixtureAddress + " - " + parseInt(parseInt(currentFixtureAddress) + parseInt(fixturefootprint) - 1);
-        //cell2Content = currentFixtureAddress
 
         let tr = tbl.insertRow();
         
         let td = tr.insertCell();
-            td.appendChild(document.createTextNode(cellContent));           //Write Cell Content
+            td.appendChild(document.createTextNode(cellContent));           //Write Cell Content(fixturenumber)
             td.style.width = "50%";
 
             
         let td2 = tr.insertCell();
-            td2.appendChild(document.createTextNode(cell2Content));           //Write Cell Content
+            td2.appendChild(document.createTextNode(cell2Content));           //Write Cell Content(fixtureaddress)
             td2.style.width = "50%";
+        
+        currentFixtureNumber++;
+        currentFixtureAddress = currentFixtureAddress + fixturefootprint //nextaddress
+        currentFixtureEndAddress = currentFixtureAddress + fixturefootprint -1 //next endaddress
+        if(currentFixtureEndAddress > 512) {    //check if footprint fits in universe
+            currentFixtureAddress = 1;
+            currentUniverse++;
+       }
     }
     
     div.appendChild(tbl);
