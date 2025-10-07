@@ -1,6 +1,6 @@
 
 
-function createTable() {
+function createAddressTable() {
     //Get input values
     let fixtureamount = document.getElementById("fixtureamount").value;
     let fixturefootprint = document.getElementById("fixturefootprint").value;

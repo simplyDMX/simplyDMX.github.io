@@ -29,6 +29,10 @@ h1{
     color: rgb(197, 224, 99);
 }
 
+h3{
+  font-size: 25px;
+}
+
 button{
     padding: 10px;
     margin: 10px;
@@ -41,7 +45,7 @@ button{
 }
 
 
-.addressCalcInputDiv{
+.addressCalcInputDiv, .footprintCalcInput{
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 7px;
@@ -77,10 +81,23 @@ button{
 }
 
 
-
 tr:nth-child(even) {
   background-color: rgb(72, 139, 73);
 }
+
+#calculatedFootprintHeader {
+  font-weight: bold;
+}
+
+#calculatedFootprint {
+  font-weight: bold;
+  border: 3px solid rgb(197, 224, 99);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px;
+  margin: 0 auto;
+}
+
 
 
 footer {
