@@ -23,20 +23,21 @@
         <div>
             <div>
                 <h3>AddressCalc</h3>
-
-                <label for="fixtureamount">Amount</label>
-                <input class="addressCalcInputDiv" type="number" id="fixtureamount" name="fixtureamount" max="200" placeholder="12">
-                <br>
-                <label for="fixturefootprint">Footprint</label>
-                <input class="addressCalcInputDiv" type="number" id="fixturefootprint" name="fixturefootprint" max="512" placeholder="1">
-                <br>
-                <label for="startAddress">Starting Address</label>
-                <input class="addressCalcInputDiv" type="number"  id="startAddress" name="startAddress" max="512" placeholder="1">
-                <br>
-                <label for="startUniverse">Starting Universe</label>
-                <input class="addressCalcInputDiv" type="number"  id="startUniverse" name="startUniverse" max="9999" placeholder="1">
-                <br>
-                <button type="button" onclick="createAddressTable()">Calculate</button>
+                <form>
+                    <label for="fixtureamount">Amount</label>
+                    <input class="addressCalcInputDiv" type="number" id="fixtureamount" name="fixtureamount" max="200" placeholder="12">
+                    <br>
+                    <label for="fixturefootprint">Footprint</label>
+                    <input class="addressCalcInputDiv" type="number" id="fixturefootprint" name="fixturefootprint" max="512" placeholder="1">
+                    <br>
+                    <label for="startAddress">Starting Address</label>
+                    <input class="addressCalcInputDiv" type="number"  id="startAddress" name="startAddress" max="512" placeholder="1">
+                    <br>
+                    <label for="startUniverse">Starting Universe</label>
+                    <input class="addressCalcInputDiv" type="number"  id="startUniverse" name="startUniverse" max="9999" placeholder="1">
+                    <br>
+                    <button type="button" onclick="createAddressTable()">Calculate</button>
+                </form>
             </div>
             <div>
                 <table id="headerForAddressTable">
@@ -57,14 +58,15 @@
         <div>
             <div>
                 <h3>FootprintCalc</h3>
-                
-                <label for="fpStartAdress">Starting Address</label>
-                <input class="footprintCalcInput" type="number" id="fpStartAdress" name="fpStartAdress" max="512" placeholder="1">
-                <br>
-                <label for="fpEndAdress">End Address</label>
-                <input class="footprintCalcInput" type="number" id="fpEndAdress" name="fpEndAdress" max="512" placeholder="12">
-                <br>
-                <button type="button" onclick="calcFootprint()">Calculate</button>
+                <form>
+                    <label for="fpStartAdress">Starting Address</label>
+                    <input class="footprintCalcInput" type="number" id="fpStartAdress" name="fpStartAdress" max="512" placeholder="1">
+                    <br>
+                    <label for="fpEndAdress">End Address</label>
+                    <input class="footprintCalcInput" type="number" id="fpEndAdress" name="fpEndAdress" max="512" placeholder="12">
+                    <br>
+                    <button type="button" onclick="calcFootprint()">Calculate</button>
+                </form>
             </div>
             <div>
                 <p id="calculatedFootprintHeader">Your Footprint:</p>
