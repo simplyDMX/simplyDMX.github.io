@@ -1,0 +1,10 @@
+{
+    "name": "simplyDMX",
+    "icons": [
+        {
+        "src": "/media/favicon.ico"
+        }
+    ],
+    "start_url": "/docs",
+    "display": "standalone"
+}
