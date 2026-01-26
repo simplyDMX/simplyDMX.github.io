@@ -6,9 +6,12 @@
     <link rel="icon" href="media/favicon.ico">
     <title>simplyDMX - Tools you might need while working with DMX</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/service-worker.js"></script>
     <script src="js/addressCalc.js"></script>
     <script src="js/footprintCalc.js"></script>
+    
     
 
 </head>
@@ -23,20 +26,21 @@
         <div>
             <div>
                 <h3>AddressCalc</h3>
-
-                <label for="fixtureamount">Amount</label>
-                <input class="addressCalcInputDiv" type="number" id="fixtureamount" name="fixtureamount" max="200" placeholder="12">
-                <br>
-                <label for="fixturefootprint">Footprint</label>
-                <input class="addressCalcInputDiv" type="number" id="fixturefootprint" name="fixturefootprint" max="512" placeholder="1">
-                <br>
-                <label for="startAddress">Starting Address</label>
-                <input class="addressCalcInputDiv" type="number"  id="startAddress" name="startAddress" max="512" placeholder="1">
-                <br>
-                <label for="startUniverse">Starting Universe</label>
-                <input class="addressCalcInputDiv" type="number"  id="startUniverse" name="startUniverse" max="9999" placeholder="1">
-                <br>
-                <button type="button" onclick="createAddressTable()">Calculate</button>
+                <form>
+                    <label for="fixtureamount">Amount</label>
+                    <input class="addressCalcInputDiv" type="number" id="fixtureamount" name="fixtureamount" max="200" placeholder="12">
+                    <br>
+                    <label for="fixturefootprint">Footprint</label>
+                    <input class="addressCalcInputDiv" type="number" id="fixturefootprint" name="fixturefootprint" max="512" placeholder="1">
+                    <br>
+                    <label for="startAddress">Starting Address</label>
+                    <input class="addressCalcInputDiv" type="number"  id="startAddress" name="startAddress" max="512" placeholder="1">
+                    <br>
+                    <label for="startUniverse">Starting Universe</label>
+                    <input class="addressCalcInputDiv" type="number"  id="startUniverse" name="startUniverse" max="9999" placeholder="1">
+                    <br>
+                    <button type="button" onclick="createAddressTable()">Calculate</button>
+                </form>
             </div>
             <div>
                 <table id="headerForAddressTable">
@@ -57,14 +61,15 @@
         <div>
             <div>
                 <h3>FootprintCalc</h3>
-                
-                <label for="fpStartAdress">Starting Adress</label>
-                <input class="footprintCalcInput" type="number" id="fpStartAdress" name="fpStartAdress" max="512" placeholder="1">
-                <br>
-                <label for="fpEndAdress">End Adress</label>
-                <input class="footprintCalcInput" type="number" id="fpEndAdress" name="fpEndAdress" max="512" placeholder="12">
-                <br>
-                <button type="button" onclick="calcFootprint()">Calculate</button>
+                <form>
+                    <label for="fpStartAdress">Starting Address</label>
+                    <input class="footprintCalcInput" type="number" id="fpStartAdress" name="fpStartAdress" max="512" placeholder="1">
+                    <br>
+                    <label for="fpEndAdress">End Address</label>
+                    <input class="footprintCalcInput" type="number" id="fpEndAdress" name="fpEndAdress" max="512" placeholder="12">
+                    <br>
+                    <button type="button" onclick="calcFootprint()">Calculate</button>
+                </form>
             </div>
             <div>
                 <p id="calculatedFootprintHeader">Your Footprint:</p>
@@ -76,11 +81,18 @@
     </div>
 
     <footer>
-        Developed by Jonathan | <a href="https://github.com/simplyDMX/simplyDMX.github.io" target="_blank">Github</a> | <var id="version">Version</var>
-        
-        <script>document.getElementById("version").innerText = "V1.0";</script>
+        Developed by Jonathan | <a href="https://github.com/simplyDMX/simplyDMX.github.io" target="_blank">Github</a> | <span id="version">version</span>
     </footer>
 
+    <script>
+        document.getElementById("version").innerText = VERSION;
+    </script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("js/service-worker.js");
+        }
+    </script>
+    
     
 </body>
 

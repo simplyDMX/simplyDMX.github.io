@@ -3,10 +3,10 @@
 }
 
 body{
-    background-color: rgb(66, 75, 84);
-    text-align: center;
-    color: white;
-    font-family: sans-serif;
+  background-color: rgb(66, 75, 84);
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
 }
 
 .flex-container {
@@ -23,10 +23,9 @@ body{
   border-radius: 10px;
 }
 
-
 h1{
-    font-size: 50px;
-    color: rgb(197, 224, 99);
+  font-size: 50px;
+  color: rgb(197, 224, 99);
 }
 
 h3{
@@ -34,52 +33,48 @@ h3{
 }
 
 button{
-    padding: 10px;
-    margin: 10px;
-    font-size: large;
-    font-weight: bold;
-    color: rgb(72, 139, 73);
-    background-color: rgb(197, 224, 99);
-    border: none;
-    border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(72, 139, 73);
+  background-color: rgb(197, 224, 99);
+  border: none;
+  border-radius: 5px;
 }
 
-
 .addressCalcInputDiv, .footprintCalcInput{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 7px;
 }
 
 #headerForAddressTable{
-   margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: larger;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-collapse: collapse;
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-collapse: collapse;
 }
 
 
 #addressTable {
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border: 3px solid rgb(197, 224, 99);
-    border-radius: 10px;
-    
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 3px solid rgb(197, 224, 99);
+  border-radius: 10px;
 }
-
 
 tr:nth-child(even) {
   background-color: rgb(72, 139, 73);
@@ -87,6 +82,7 @@ tr:nth-child(even) {
 
 #calculatedFootprintHeader {
   font-weight: bold;
+  font-size: larger;
 }
 
 #calculatedFootprint {
@@ -98,16 +94,11 @@ tr:nth-child(even) {
   margin: 0 auto;
 }
 
-
-
 footer {
-    margin-top: 20px;
-    font-size: small;
-    color: white;
-    text-decoration: none;
+  margin-top: 20px;
+  font-size: small;
+  color: white;
 }
-
-
 
 a:link {
   color: white;
@@ -133,6 +124,3 @@ a:active {
   text-decoration: none;
 }
 
-#version {
-  font-style: normal;
-}
