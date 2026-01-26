@@ -2,7 +2,7 @@
 
 // This Variable is used to set and display the current version of the Website and Service Worker cache
 
-const VERSION = "v1.1.2";
+const VERSION = "v1.1.3";
 
 
 
@@ -13,8 +13,8 @@ const CACHE_NAME = "simplyDMX_" + VERSION;
 // The files to make available for offline use.
 const URLS = [    
     "/",
-    "index.html",
-    "style.css",
+    "/index.html",
+    "/style.css",
     "/js/addressCalc.js",
     "/js/footprintCalc.js"
 ];
