@@ -6,12 +6,9 @@
     <link rel="icon" href="media/favicon.ico">
     <title>simplyDMX - Tools you might need while working with DMX</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/service-worker.js"></script>
     <script src="js/addressCalc.js"></script>
     <script src="js/footprintCalc.js"></script>
-    
     
 
 </head>
@@ -81,18 +78,9 @@
     </div>
 
     <footer>
-        Developed by Jonathan | <a href="https://github.com/simplyDMX/simplyDMX.github.io" target="_blank">Github</a> | <span id="version">version</span>
+        Developed by Jonathan | <a href="https://github.com/simplyDMX/simplyDMX.github.io" target="_blank">Github</a> | <span id="version">v1.1</span>
     </footer>
 
-    <script>
-        document.getElementById("version").innerText = VERSION;
-    </script>
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("js/service-worker.js");
-        }
-    </script>
-    
     
 </body>
 
