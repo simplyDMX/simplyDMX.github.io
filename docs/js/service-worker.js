@@ -2,7 +2,7 @@
 
 // This Variable is used to set and display the current version of the Website and Service Worker cache
 
-const VERSION = "v1.1.5";
+const VERSION = "v1.1.6";
 
 
 
