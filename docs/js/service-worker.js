@@ -1,9 +1,15 @@
  
-// The version of the cache.
- const VERSION = "v1";
 
- const CACHE_NAME = "simplyDMX_${VERSION}";
- 
+// This Variable is used to set and display the current version of the Website and Service Worker cache
+
+const VERSION = "v1.1";
+
+
+
+// The version of the cache.
+
+const CACHE_NAME = "simplyDMX_" + VERSION;
+
 // The files to make available for offline use.
 const URLS = [    
     "/",
