@@ -1,0 +1,19 @@
+{
+    "name": "simplyDMX",
+    "short_name": "simplyDMX",
+    "description": "Website that offers different little tools to simplify working with DMX",
+    "icons": [
+        {
+        "src": "media/192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+        },
+        {
+        "src": "media/512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+        }
+    ],
+    "start_url": "/docs/index.html",
+    "display": "standalone"
+}
