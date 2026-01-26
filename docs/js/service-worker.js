@@ -13,10 +13,10 @@ const CACHE_NAME = "simplyDMX_" + VERSION;
 // The files to make available for offline use.
 const URLS = [    
     "/",
-    "/docs/index.html",
-    "/docs/style.css",
-    "/docs/js/addressCalc.js",
-    "/docs/js/footprintCalc.js"
+    "index.html",
+    "style.css",
+    "/js/addressCalc.js",
+    "/js/footprintCalc.js"
 ];
 
 //save data to cache on install
